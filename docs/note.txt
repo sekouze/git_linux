@@ -1,0 +1,66 @@
+******************************************************************
+                    Les essentiels à connaitre sur git
+*******************************************************************
+
+1)git config --global user.name "nom utilisatur" : creer un non d'utilisatur pour son depos git
+
+2)git config --global user.email "gmail":  creer un mail
+
+3)git add nomFic.extension : pour ajouter une copie de son fichier dans son depos git
+
+4)git add -A ou . : pour ajouter tout le projet
+
+5)git status : pour voir l'etat des fichiers trackés et non trackés
+
+6)git commit -m "nom du commit" : pour sauvegarder les fichiers ajoutés dans son depos
+
+7)git log : pour voir les infos de tout les commit enregistrés
+
+8)git diff nomFic.extension: pour voir les modif qui ont été rajoutées au niveau du fic
+
+9)git reset --hard identfient : pour revenir à un commit avec ses ancienne modifications et annuler les autres precedents
+
+10)git reset --soft identfient : pour revenir à un commit sans ses ancienne modifications et annuler les autres precedents
+
+11)git commit --amend : pour rajoutées toutes les modifications au precedent commit
+  *git commit --amend --no-edit: si l'on ne souhaite pas modifier le message du commit
+
+12)git show identfient :pour voir les modif qui ont été ajout au niveau d'un commit
+
+                ################### Notion des branches ######################
+1)git branche : pour lister toutes branches de son depos
+
+2)git checkout -b nom_branch : permet de creer une branche et de s'y rendre
+
+3)git checkout nom_branch : pour aller vers une branche
+
+NB: les modif effectuées sur les  commit de chacune de ces  branches ne sont pas liées alors la solution sert à
+fusionner les branches
+
+4)git merge nom_branch_à_fusionnée: pour fusionner deux branches afin de grarder les modif
+
+5)git branch -d nom_branch_à_supprimer : pour supprimer une branche apres une fusionne
+
+6)git branch -D nom_branch_à_supprimer : pour supprimer une branche meme s'elle n'est pas fusionnée
+
+                ############# Notion des ailas ##########################
+1)git config --global alias.nom_alias 'reference'
+
+2)git config --global --unset alias.nom_alias
+--------------------------------------------
+
+              ############ les caprices des branches ##################
+1)git log --oneline :pour  lister tout les commit ligne par ligne
+2)git log --graph : pour representer les commit d'une maniere graphique
+    Remarque :il es possible de combiner les deux comme ce-ci : git log --online --graph
+3)
+
+              ############# creation d'un depot et push vers github ou bitbuker ####################
+1)git remote add nom_du_remote 'url'
+2)git remote -v :pour lister le depot git  distant
+3)git push -u nom_du_remote nom_branch : pour ajouter une branche depuit le depot distant et 'origin' corespond au nom 
+du push. 
+(NB: cette action s'effectue une seule fois la suite on utiliser <<git push>>)
+4) 
+
+
