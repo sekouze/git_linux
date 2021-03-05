@@ -29,3 +29,16 @@ installation du nodejs
 installation du npm
 ***********************************************************
 sudo apt install npm
+
+
+
+************************************************************
+configuration de la clé ssh sous wsl
+***********************************************************
+1-cp -r /mnt/c/Users/<username>/.ssh ~/.ssh
+
+2-chmod 600 ~/.ssh/id_rsa //--> permission
+
+3-sudo apt install keychain
+
+4-eval ``keychain --eval --agents ssh id_rsa
