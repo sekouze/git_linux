@@ -1,0 +1,26 @@
+python3.9 -m venv nom_projet: pour creer un evironement virtuel pour son project
+
+***Infrastructure : c'est un machine réelle (machine,serveur,serveur cloud)
+
+***Hyerviseur: un controleur de machine virtuelle
+
+
+************************************************************************************************
+                                    QUELQUES COMMANDES DOCKER
+************************************************************************************************
+
+1-docker pull nom_image:tag(version) : pour intaller une image docker
+
+2-docker image ls : lister toutes les images
+
+3-docker container ls :lister tout les container non actifs (on peut y aujouter l'option <<-a>> pour lister tout)
+
+4-docker run nom_image:tag : pour creer un container
+
+NB:
+    **si vous ne donnez aucune instruction à un container il s'arrete automatiquement
+    **cette commande cree autant de container qu'on souhaite
+    **on peut aussi creer un container en mode interactif en y ajoutant l'option <<-it>> commande suit:
+        docker run -it nom_image:tag   
+
+5-
