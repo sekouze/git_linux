@@ -45,7 +45,20 @@
 
 19)git cherry-pick id_ : fusionner un commit specifique à une banch sur sa branch.
 
-20)
+20)git pull : permet recuperer les dernières modifications depuis le depot distant vers le depot local tout en fusionant automatiquement les mofidifications.
+
+21)git pull <remote> : permet recuperer les dernières modifications depuis le depot distant vers le depot local avec la télécommande precise.
+
+22)git fetch : même rôle que le git pull mais celui-ci isole les modifications sans les fusionner au depôt local
+
+23)git bisect start <id_commit_bug> <id_commit_no_but> : pour chercher ou le bug est survenu entre deux commit.
+
+    *git bisect (good and bad) : permet d'indiquer sur quel commit nous presentons le bug.
+  
+24)git submodule add lien_du_sous_module : pour integrer un sous module dans son projet
+
+25)git subtree push -P monRépertoire : pour pusher le sousModur sur son deôt distant.
+
                 ################### Notion des branches ######################
 1)git branche : pour lister toutes branches de son depos
 
