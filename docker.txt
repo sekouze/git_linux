@@ -21,6 +21,19 @@ NB:
     **si vous ne donnez aucune instruction à un container il s'arrete automatiquement
     **cette commande cree autant de container qu'on souhaite
     **on peut aussi creer un container en mode interactif en y ajoutant l'option <<-it>> commande suit:
-        docker run -it nom_image:tag   
+        docker run -it nom_image:tag
+    **on peut aussi créer et container en mode detacher (en arrière) plan tout en utilisant docker run -it -d nom_image:tag
 
-5-
+5-docker stop container_id : pour stoper un container
+
+6-docker system prune :Pour netoyer le systeme
+
+7-docker build -t nom_image_a_creeer repertoire : permete de creer sa propre image docker depuis un dokerfile cree dans son projet
+
+8-doccker tag nom_image_source:tag  nom_profil/nom_image_sur_hub:tag :permet de creer un lien entre deux images(en local et qui doit etre partagee)
+    **NB: on peut aussir utiliser l'id du conteneur à la place son nom si on ne connais pas son nom
+
+9-docker push nom_profil/nom_image_sur_hub:tag: pour envoyer son image sur le hub
+
+10-docker search nom_image : pour chercher une image en ligne de commande
+
