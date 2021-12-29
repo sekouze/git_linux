@@ -37,3 +37,30 @@ NB:
 
 10-docker search nom_image : pour chercher une image en ligne de commande
 
+
+
+**********************************************************************************************************
+                                    Utilisation du cocker-compose
+**********************************************************************************************************
+
+**Remarque : les commades docker-composer sont très similaires à du docker.
+        ex: télécharger une imae
+
+            *docker : docker pull
+            *docker-compose ! docker-compose pull
+        
+**Quelques commandes importantes du docker compose
+
+1-docker-composer up : pour lancer la creation de l'ensemble des conteneurs?On peut aussi utiliser l'argument -d pour les faire tourner en bg
+
+2-docker-compose ps: pour voir si l'ensemble des conteneurs est en bon etat fonctionnel.
+
+3-docker-compose logs -f --tail 5 : pour afficher les logs des contenair sur les 5 premieres lignes.
+
+4-docker-compose stop : pour arreter la stak du docker-compose
+
+5-docker-compose down : pour supprimer l'ensemble de la stak dockeer-compose
+
+6-docker-compose config : permet de valider la synthaxe du fichier docker-compose.yml
+
+7-
